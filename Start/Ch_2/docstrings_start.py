@@ -3,6 +3,9 @@
 
 
 def my_function(arg1, arg2=None):
+    """
+    documentation
+    """
     print(arg1, arg2)
 
 
