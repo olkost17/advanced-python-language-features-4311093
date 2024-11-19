@@ -29,6 +29,16 @@ class Rectangle:
 
 # create a list of some shapes
 shapes = [Circle(5), Square(4), Rectangle(4, 6),
-          Square(7), Circle(9), Rectangle(2, 5)]
+          Square(7), Circle(9), Rectangle(2, 5)]  # , Triangle(3, 3, 2)]
 
 # TODO: use pattern matching to process each shape
+for shape in shapes:
+    match shape:
+        case Circle():
+            print(f"Circle with area {shape.getarea()}")
+        case Square():
+            print(f"Sqare with area {shape.getarea()}")
+        case Rectangle():
+            print(f"Rectangle with area {shape.getarea()}")
+        case _:
+            print(f"Unrecognized shape: type {shape}")
