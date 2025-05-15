@@ -43,8 +43,8 @@ dept.append(Employee("Rebecca", "Robinson", 5, 13))
 dept.append(Employee("Tyler", "Durden", 5, 12))
 
 # TODO: Who's more senior?
-# print(dept[0] > dept[2])
-# print(dept[4] < dept[3])
+print(dept[0] > dept[2])
+print(dept[4] < dept[3])
 
 # TODO: sort the items
 for emp in dept:
